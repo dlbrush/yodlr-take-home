@@ -1,0 +1,8 @@
+thead th:hover {
+  background-color: rgb(158, 158, 158);
+  cursor: pointer;
+}
+
+.sorted {
+  background-color: lightgray;
+}
