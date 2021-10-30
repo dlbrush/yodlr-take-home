@@ -7,7 +7,13 @@ class API {
   }
 
   static sendRegistration(data) {
-    console.log(data);
-    return $.post(`${basePath}/users`, data)
+    return $.post(`${basePath}/users`, data);
+  }
+
+  static updateUser(id, data) {
+    return $.ajax(`${basePath}/users/${id}`, {
+      method: 'PUT',
+      data
+    });
   }
 }

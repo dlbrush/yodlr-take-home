@@ -1,8 +1,13 @@
-thead th:hover {
+.sortable:hover {
   background-color: rgb(158, 158, 158);
   cursor: pointer;
 }
 
 .sorted {
   background-color: lightgray;
+}
+
+.sort {
+  width: 10px;
+  height: 16px;
 }

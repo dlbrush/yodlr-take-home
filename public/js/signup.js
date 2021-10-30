@@ -1,8 +1,9 @@
 $(() => {
-  const alert = $('#register-alert');
+  $('#register-form').on('submit', submit);
 
   function submit(evt) {
     evt.preventDefault();
+    const alert = $('#register-alert');
     const data = {
       email: evt.target.email.value,
       firstName: evt.target['first-name'].value,
@@ -20,6 +21,4 @@ $(() => {
       alert.text(`Failed to register: ${error.message}`);
     })
   };
-
-  $('#register-form').on('submit', submit);
 });
